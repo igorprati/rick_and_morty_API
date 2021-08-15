@@ -1,0 +1,303 @@
+/* * {
+    border: 1px solid black;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Staatliches&display=swap');
+
+body {
+    background-image: url('https://i.pinimg.com/originals/1f/5e/09/1f5e094918832eea3857101365e1d4a1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Staatliches', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+/* ======== */
+/* HEADER */
+/* ======== */
+
+.app__list__searchbox__container img {
+    max-width: 300px;
+}
+.searchbox {
+    text-align: left;
+    padding: 20px 0;
+}
+
+.searchbox input {
+    display: block;
+    padding: 5px 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+/* ======== */
+/* CARDLIST */
+/* ======== */
+
+.cardList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ======== */
+/* CARD */
+/* ======== */
+
+.card {
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color:#00B2C7;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.card:hover{
+    background-color: white;
+}
+
+.card__img {
+    overflow: hidden;
+}
+
+.card__img img{
+    transition: all 400ms;
+    object-position: center;
+    min-width: 100%;
+    max-height: 300px;
+}
+
+.card:hover img{
+    transform: scale(1.2);
+}
+
+.card__info{
+    padding: 1rem;
+}
+
+.info__status{
+    position: relative;
+    padding-left: 20px;
+}
+
+.info__nome {
+    font-size: 1.5rem;
+}
+
+.info__id {
+    margin-top: -15px;
+}
+
+/* ======== */
+/* INFO__STATUS */
+/* ======== */
+
+.status--Alive {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 0;
+    top: 4px;
+    position: absolute;
+    background-color: rgb(34, 207, 43);
+}
+
+.status--Dead {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 0;
+    top: 4px;
+    position: absolute;
+    background-color: rgb(207, 34, 34);
+}
+
+.status--unknown {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 0;
+    top: 4px;
+    position: absolute;
+    background-color: rgb(192, 192, 192);
+}
+
+/* ======== */
+/* INFO */
+/* ======== */
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.info__box {
+    background-color: #00B2C7;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+
+.info__img {
+    text-align: center;
+}
+
+.info__img img{
+    border-radius: 50%;
+}
+
+.info__info .info__status {
+    text-align: left;
+}
+
+@media screen and(max-width: 560px) {
+    .info {
+        display: block;
+    }
+}
+
+.info__row {
+    display: flex;
+}
+
+.data__location,
+.data__episodes {
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn__voltar {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(224, 153, 39);
+    color: white;
+    font-weight: bold;
+}
+
+/* ======== */
+/* EPISODES */
+/* ======== */
+
+.episodes {
+    padding-bottom: 50px;
+}
+.episode__name{
+    text-align: center;
+}
+.episode__name h2 {
+    font-size: 42px;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 50px;
+    margin: 15px 15px;
+}
+
+.episodes__lista {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.episodes h2 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.nome__personagem {
+    display: block;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 15px 15px;
+}
+
+.hr {
+    width: 50%;
+}
+
+/* .episodes__lista .episode {
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 15px 15px;
+    flex: 1 1 80px;
+} */
+
+.episodes__lista a {
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    /* padding: 5px 15px; */
+    margin: 15px 15px;
+    flex: 1 1 200px;
+}
+
+@media screen and (max-width: 560px) {
+    .episodes__lista a {       
+        flex: 1 1 150px;
+    }
+    .searchbox {
+        text-align: center;
+    }
+}
+
+.carregar__mais {
+    border: none;
+    font-size: 25px;
+    background-color: rgb(224, 153, 39);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 40px 0;
+    cursor: pointer;
+    transition: all 200ms;
+    font-family: 'Staatliches', cursive;
+}
+
+.carregar__mais:hover{
+    transform: scale(0.9);
+}
+
